@@ -22,9 +22,73 @@
     <title>Hotel_Ritz_Seoul</title>
      <!-- 메인 CSS -->
 	<link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 	<style type = "text/css">
+	
+.hr1 {border-bottom: 1px solid #d3d3d3;}
 
+.MyTitle {
+	color: #333;
+	font-weight: bold;
+	font-size: 30px
+}	
+	
+#btn:hover {
+	background-color: #FCF4C0  ;
+	color: #333;
+	cursor: pointer;
+}
+
+#btn {
+	border: 1px solid #E9E9E9;
+	font-size : 15px;
+	font-weight: bold;
+	background-color: #FAFAFA;
+	color: #333;
+	width: 250px;
+	height : 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
+
+#btn1:hover {
+	background-color: #FCF4C0  ;
+	color: #333;
+	cursor: pointer;
+}
+
+#btn1 {
+	border: 1px solid #E9E9E9;
+	font-size : 15px;
+	font-weight: bold;
+	background-color: #FAFAFA;
+	color: #333;
+	width: 250px;
+	height : 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
+
+#delBtn:hover {
+	background-color: #FCF4C0  ;
+	color: #333;
+	cursor: pointer;
+}
+
+#delBtn {
+	border: 1px solid #E9E9E9;
+	font-size : 15px;
+	font-weight: bold;
+	background-color: #FAFAFA;
+	color: #333;
+	width: 100px;
+	height : 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
 	</style>
 	
 <!-- jQuery CDN -->
@@ -93,7 +157,7 @@ $(function(){
 
   			//이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우			
 
-  			alert("이메일형식이 올바르지 않습니다.");
+  			alert("이메일 형식이 올바르지 않습니다.");
 
   			document.addjoin.email.focus();
 
@@ -103,7 +167,7 @@ $(function(){
   	}
 	$("#delBtn").click(function(){
 		if (confirm("정말 탈퇴를 하시겠습니까?") == true) {
-			alert("회원 탈퇴가 완료되었습니다. \n그동안이용해주셔서 감사합니다");
+			alert("회원 탈퇴가 완료되었습니다. \n그동안 이용해 주셔서 감사합니다");
 		$("#delfrm").submit();	
 		}
 		return;
@@ -134,44 +198,47 @@ pageContext.setAttribute("info", infoVO);
    </div>
 <div>
 <br/>
-<h4>&nbsp;&nbsp;홈 / 마이페이지</h4>
 </div>
 <br/><br/><br/>
-<div style = "width:600px; border-bottom:2px solid #d3d3d3; text-align: center; margin: 0px auto;">
-<h2>마이페이지</h2>
-</div>
+<div class = "container">	
+<div style="text-align: center">
+		<p class="MyTitle">마이페이지</p><br/>
+ <hr class="hr1">
+	</div>
 <div style = "width:450px; border-bottom:2px solid #d3d3d3; text-align: center; margin: 0px auto;">
 <br/><br/><br/>
-<h5>비밀번호 변경하기</h5>
-<form  id="passFrm" action="http://211.63.89.141/user/mypage/member_pass_process.jsp" method="post">
+<p style = "font-size: 18px; font-weight: bold; ">비밀번호 변경하기<p>
+<form  id="passFrm" action="http://team3.aws.sist.co.kr/user/mypage/member_pass_process.jsp" method="post">
 <input type="password" style="width:250px;height:40px" placeholder="현재 비밀번호를 입력하세요"id="pass"  name ="pass">
 <br/><br/>
 <input type="password" style="width:250px;height:40px" placeholder="변경할 비밀번호를 입력하세요" id="change_pass" name="change_pass">
 <br/><br/>
 <input type="password" style="width:250px;height:40px" placeholder="변경할 비밀번호를 한 번 더 입력하세요."  id="change_pass2" name="change_pass2">
 <br/><br/><br/>
-<button type="button" class="btn btn-default" style="width:250px;height:40px" id="btn">수정</button>
+<button type="button" id="btn">수정</button>
 </form>
 <br/><br/><br/><br/><br/><br/>
 </div>
 <c:if test="${empty info }">
-<% response.sendRedirect("http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp"); %>
+<% response.sendRedirect("http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp"); %>
 </c:if>
 <div style = "width:450px; border-bottom:2px solid #d3d3d3; text-align: center; margin: 0px auto;">
 <br/><br/><br/>
 <c:forEach var="info" items="${info}">
-<form id="frm" action="http://211.63.89.141/user/mypage/member_update_process.jsp" method="get">
-<h5>이름 변경하기</h5>
+<form id="frm" action="http://team3.aws.sist.co.kr/user/mypage/member_update_process.jsp" method="get">
+
+<p style = "font-size: 18px; font-weight: bold; ">이름 변경하기</p>
 <input type="text" style="width:250px;height:40px" value="${ info.kname }" id="kname" name="kname" >
 <br/><br/>
-<h5>전화번호 변경하기<br/>("-"를 포함해주세요)</h5>
+
+<p style = "font-size: 18px; font-weight: bold; ">전화번호 변경하기<br/>("-"를 포함해주세요)</p>
 <input type="text" style="width:250px;height:40px" value="${info.tel }"name="tel" id="tel">
 <br/><br/>
 
-<h5>이메일 변경하기</h5>
+<p style = "font-size: 18px; font-weight: bold; ">이메일 변경하기</p>
 <input type="text" style="width:250px;height:40px" value="${info.email }" name="email" id="email">
 <br/><br/><br/>
-<button type="button" class="btn btn-default" style="width:250px;height:40px ; margin: 0px auto;" value="수정"  id="btn1">수정</button>
+<button type="button" value="수정"  id="btn1">수정</button>
 </form>
 </c:forEach>
 <br/><br/><br/><br/><br/><br/>
@@ -180,15 +247,15 @@ pageContext.setAttribute("info", infoVO);
 <div style = "width:450px; text-align: center; margin: 0px auto;">
 <br/><br/><br/>
 <form action="member_del.jsp" id="delfrm" name="delfrm">
-<button type="button" class="btn btn-default" style="width:100px;height:40px" id="delBtn">회원탈퇴</button>
+<button type="button" id="delBtn">회원탈퇴</button>
 </form>
 <br/><br/><br/>
 </div>
+</div>
   <br/><br/><br/><br/><br/><br/>
-<div class="container marketing">
+
  <!-- FOOTER -->
 
-    </div><!-- /.container -->
 
 <jsp:include page="../../main/main_footer.jsp"/>
 
@@ -196,6 +263,6 @@ pageContext.setAttribute("info", infoVO);
     ================================================== -->
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

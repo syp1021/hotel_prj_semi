@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 탈퇴회원조회</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <!-- jQuery CDN -->
 <script
@@ -30,7 +30,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 <style type="text/css">
 .button {
 	border-radius: 10px;
@@ -126,11 +126,11 @@ tr:hover td {
 		<div id="container">
 			<div id="naviBar2">
 				<span id="mainMenu" style="text-decoration: none"
-					onclick="location.href='http://211.63.89.141/admin/admin_member/admin_member_select.jsp'">회원조회</span>
+					onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_member/admin_member_select.jsp'">회원조회</span>
 				&nbsp; <span id="mainMenu"
-					onclick="location.href='http://211.63.89.141/admin/admin_member/admin_member_delete.jsp'">탈퇴회원</span>
+					onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_member/admin_member_delete.jsp'">탈퇴회원</span>
 					
-				<form name="frm_search" action="http://211.63.89.141/admin/admin_member/admin_member_specific_delete.jsp" method="post">
+				<form name="frm_search" action="http://team3.aws.sist.co.kr/admin/admin_member/admin_member_specific_delete.jsp" method="post">
 					<input type="text" name="search" placeholder="ID조회" id="id_search"class="form-control" maxlength="10" /> 
 					<input type="submit"value="검색" name="search" class="btn btn-default" id="search" />
 				</form>

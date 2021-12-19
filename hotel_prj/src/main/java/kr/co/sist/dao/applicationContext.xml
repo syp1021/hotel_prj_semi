@@ -10,7 +10,7 @@
 <!-- DBCP설정 -->
 <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
 <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
-<property name="url" value="jdbc:oracle:thin:@211.63.89.141:1521:orcl"/>
+<property name="url" value="jdbc:oracle:thin:@211.63.89.131:1521:orcl"/>
 <property name="username" value="team3"/>
 <property name="password" value="project"/>
 </bean>

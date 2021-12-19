@@ -34,12 +34,12 @@ if(cnt == 1){
 %>
 <script type="text/javascript">
 	alert("해당 예약 건이 정상적으로 삭제되었습니다.");
-	location.href="http://211.63.89.141/admin/admin_reservation/admin_reservation_main.jsp";
+	location.href="http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_main.jsp";
 </script>
 <%} else {%>
 <script type="text/javascript">
 	alert("죄송합니다. 잠시 후 다시 시도해주십시오.");
-	location.href="http://211.63.89.141/admin/admin_reservation/admin_reservation_main.jsp";
+	location.href="http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_main.jsp";
 </script>
 <%}%>
 </c:catch>
@@ -47,7 +47,7 @@ if(cnt == 1){
 <c:if test="${not empty e}">
 	<strong>죄송합니다. 삭제 작업 중 문제가 발생했습니다.</strong><br/>
 	<strong>잠시 후 다시 시도해주세요.</strong><br/>
-	<a href="http://211.63.89.141/admin/admin_reservation/admin_reservation_main.jsp">뒤로 가기</a>
+	<a href="http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_main.jsp">뒤로 가기</a>
 </c:if>
 </body>
 </html>

@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import org.springframework.dao.DataAccessException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -21,17 +22,15 @@ public class RoomSelect {
 
 	/**
 	 * 예약변경시 사용할 
-	 * 활성화된 객실 리스트 조회
 	 * @return
+	 * @throws DataAccessException
 	 */
-	public List<String> selectAllRName() throws SQLException {
+	public List<String> selectAllRName() throws DataAccessException {
 		List<String> list = null;
 
-		// 1. Spring Container 얻기
 		GetJdbcTemplate gjt = GetJdbcTemplate.getInstance();
-		// 2. JdbcTemplate 얻기
 		JdbcTemplate jt = gjt.getJdbcTemplate();
-		// 3. 쿼리 실행
+
 		String select = "select r_name from room where r_status='Y'";
 		list = jt.query(select, new RowMapper<String>() {
 			public String mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -39,7 +38,7 @@ public class RoomSelect {
 				return name;
 			}// mapRow
 		});
-		// 4. Spring Container닫기
+
 		gjt.closeAc();
 
 		return list;
@@ -47,16 +46,17 @@ public class RoomSelect {
 
 	/**
 	 * 등록된 모든 room 상세정보 조회
+	 * @param rName
+	 * @param rStatus
 	 * @return
+	 * @throws DataAccessException
 	 */
-	public List<RoomVO> selectRoomInfo(String rName, String rStatus) throws SQLException {
+	public List<RoomVO> selectRoomInfo(String rName, String rStatus) throws DataAccessException {
 		List<RoomVO> roomList = null;
 
-		// 1. Spring Container 얻기
 		GetJdbcTemplate gjt = GetJdbcTemplate.getInstance();
-		// 2. JdbcTemplate 얻기
 		JdbcTemplate jt = gjt.getJdbcTemplate();
-		// 3. 쿼리 실행
+
 		StringBuilder select = new StringBuilder("select * from room");
 		
 		//파라미터가 들어왔을 때 조건문 추가 
@@ -83,7 +83,7 @@ public class RoomSelect {
 
 		roomList = jt.query(select.toString(), new selectRoomInfo());
 
-		// 4. Spring Container닫기
+
 		gjt.closeAc();
 
 		//room_no대로 정렬
@@ -138,16 +138,16 @@ public class RoomSelect {
 	
 	/**
 	 * images 테이블에서 룸별 이미지 조회
+	 * @param rName
 	 * @return
+	 * @throws DataAccessException
 	 */
-	public List<OtherImgVO> selectOtherImg(String rName) throws SQLException {
+	public List<OtherImgVO> selectOtherImg(String rName) throws DataAccessException {
 		List<OtherImgVO> imgList = null;
 
-		// 1. Spring Container 얻기
 		GetJdbcTemplate gjt = GetJdbcTemplate.getInstance();
-		// 2. JdbcTemplate 얻기
 		JdbcTemplate jt = gjt.getJdbcTemplate();
-		// 3. 쿼리 실행
+
 		StringBuilder select = new StringBuilder();
 
 		select.append(" 	select * 	from   images")
@@ -165,18 +165,19 @@ public class RoomSelect {
 							return imgVO;
 						}//mapRow
 			});
-			// 4. Spring Container닫기
+
 		gjt.closeAc();
 		
 		return imgList;
-	}// selectRoomInfo
+	}// selectOtherImg
 	
 	
 	/**
 	 * 객실 추가 시 가장 끝번호인 RoomNo를 조회하여 사용
 	 * @return
+	 * @throws DataAccessException
 	 */
-	public int selectMaxRoomNo() {
+	public int selectMaxRoomNo() throws DataAccessException{
 		int num = 0;
 		
 		GetJdbcTemplate gjt = GetJdbcTemplate.getInstance();
@@ -193,9 +194,12 @@ public class RoomSelect {
 	
 	/**
 	 * 객실 수정 시, 중복 이름을 조회하는 일
+	 * @param rName
+	 * @param roomNum
 	 * @return
+	 * @throws DataAccessException
 	 */
-	public List<String> selectRoomName(String rName, String roomNum) throws SQLException {
+	public List<String> selectRoomName(String rName, String roomNum) throws DataAccessException {
 		List<String> list = null;
 
 		GetJdbcTemplate gjt = GetJdbcTemplate.getInstance();

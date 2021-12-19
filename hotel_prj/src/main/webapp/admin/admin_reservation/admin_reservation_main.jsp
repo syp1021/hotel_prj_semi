@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 예약관리</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <!-- jQuery CDN -->
 <script
@@ -26,7 +26,7 @@
 
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 
 <style type="text/css">
 #date{
@@ -166,8 +166,8 @@ $(function(){
 		<c:import url="../common/admin_header_nav.jsp" /> 
 
 		<div id="container" style="padding:50px">
-		<form name="dateFrm" id="dateFrm" action="http://211.63.89.141/admin/admin_reservation/admin_reservation_main.jsp" method="get" class="form-inline">
-		 <span id="mainMenu" onclick="location.href='http://211.63.89.141/admin/admin_reservation/admin_reservation_main.jsp'">체크인 날짜 검색</span><br/><br/>
+		<form name="dateFrm" id="dateFrm" action="http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_main.jsp" method="get" class="form-inline">
+		 <span id="mainMenu" onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_main.jsp'">체크인 날짜 검색</span><br/><br/>
 	
 		 <div id="date">
 		 <!-- 날짜 입력/선택여부에 따라 value 설정-->
@@ -231,12 +231,12 @@ $(function(){
 		</div>
 		 
 		  <!-- 테이블의 예약건(행) 클릭시 hidden값 설정 및 페이지 이동 -->
-		 <form name="chgFrm" id="chgFrm" action="http://211.63.89.141/admin/admin_reservation/admin_reservation_change.jsp" method="post">
+		 <form name="chgFrm" id="chgFrm" action="http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_change.jsp" method="post">
 		 	<input type="hidden" name="resNum" id="resNum"/>
 		 </form>
 		 
 		 <!-- 삭제버튼 클릭시 hidden값 설정 및 페이지 이동 -->
-		 <form name="delFrm" id="delFrm" action="http://211.63.89.141/admin/admin_reservation/admin_reservation_del_process.jsp" method="post">
+		 <form name="delFrm" id="delFrm" action="http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_del_process.jsp" method="post">
 		 	<input type="hidden" name="delResNum" id="delResNum"/>
 		 </form>
 		 

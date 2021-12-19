@@ -13,10 +13,47 @@
 
     <!-- 메인 CSS -->
 	<link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
      <title>Hotel_Ritz_Seoul</title>
 	<style type = "text/css">
-	/* 		div {margin: 0px auto; width: 1130px;} */
+	
+.hr1 {border-bottom: 1px solid #d3d3d3;}
+
+.loginTitle {
+	color: #333;
+	font-weight: bold;
+	font-size: 25px
+}
+
+#btn:hover {
+	background-color: #FCF4C0  ;
+	color: #333;
+	cursor: pointer;
+}
+
+#btn {
+	border: 1px solid #E9E9E9;
+	font-size : 15px;
+	font-weight: bold;
+	background-color: #FAFAFA;
+	color: #333;
+	width: 230px;
+	height : 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
+
+#join:hover {color:#333; font-weight: bold;}
+
+#find:hover {color:#333;  font-weight: bold;}
+/*
+div { border: 1px solid #0000FF}
+td { border: 1px solid #FF0000}
+tr { border: 1px solid #FF0000}
+span { border: 1px solid #FF00FF}
+p { border: 1px solid #FF00FF}
+*/
 	</style>
 	
     <!-- Bootstrap core CSS -->
@@ -29,11 +66,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	
-    <script src="http://211.63.89.141/common/bootstrap/holder.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/holder.js"></script>
 
-    <script src="http://211.63.89.141/common/bootstrap/ie-emulation-modes-warning.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/ie-emulation-modes-warning.js"></script>
 
-    <link href="http://211.63.89.141/common/bootstrap/carousel.css" rel="stylesheet">
+    <link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css" rel="stylesheet">
     <script type="text/javascript">
   $(function() {
 		$("#btn").click(function() {
@@ -61,32 +98,35 @@
 ================================================== -->
 	<jsp:include page="../../main/main_header_nav.jsp"/>
   <body>
-	
-	
-	<!-- Standard button -->
-	
-	
+
 	
       	<br/><br/><br/><br/><br/>
-    <div class="container">	
-    
-    <h2 style="text-align: center;">로그인</h2>
-    <hr/>
+    <div class = "container">	
+    <div style="text-align: center">
+		<p class="loginTitle">로그인</p>
+    <hr class="hr1">
+			</div>
+
     <br/><br/>
     <form action="login_process.jsp"  method="post" id="frm" name="frm">
-    <table style="margin: 0px auto;">
+    <table style="margin: 0px auto; width: 230px">
     	<tr>
-    		<td style="padding: 5px"><input type="text" placeholder="아이디를 입력하세요" name="id" id="id" class="form-control"> </td>
-    		<td rowspan="2"><input type="button"  class="btn btn-default" style="width:90px; height:40px;" value="로그인"  id="btn" ></td>
-    	</tr>
-    	<tr>
-    		<td style="padding: 5px"><input type="password" placeholder="비밀번호를 입력하세요"  name="pass" id="pass" class="form-control"> </td>
-    	</tr>
-    	<tr >
-    	
-    		<td><a href="http://211.63.89.141/user/login/signIn.jsp" style="color: #C0C0C0">&nbsp;&nbsp;회원가입&nbsp;&nbsp;</a>
-    		<a href="http://211.63.89.141/user/login/find.jsp" style="color: #C0C0C0">아이디/비밀번호 찾기</a></td>
-    	</tr>
+    		<tr>
+    			<td style = "padding: 10px"><input type="text" placeholder="아이디" style = "height: 40px" name="id" id="id" class="form-control"> </td>
+    		</tr>
+    		<tr>
+    			<td  style = "padding: 10px"><input type="password" placeholder="비밀번호" style = "height: 40px" name="pass" id="pass" class="form-control"> </td>
+    		</tr>
+    		<tr>
+    			<td  style = "padding: 10px"><input type="button"  value="로그인"  id="btn" ></td>
+    		</tr>
+    		<tr>
+    			<td style = "padding: 5px">
+    			&nbsp;&nbsp;
+    			<a href="http://team3.aws.sist.co.kr/user/login/signIn.jsp" style="color: #C0C0C0" ><span id = "join">회원가입&nbsp;&nbsp;</span></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+    			<a href="http://team3.aws.sist.co.kr/user/login/find.jsp" style="color: #C0C0C0"><span id = "find">아이디/비밀번호 찾기</span></a></td>
+    		</tr>
     </table>
     </form>
     
@@ -100,7 +140,7 @@
     ================================================== -->
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
     <script>
 
    		

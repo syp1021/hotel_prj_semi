@@ -19,7 +19,7 @@ if (request.getContentType() == null) {
 }//end if
 
 	//temp폴더에 파일 업로드
-	File uploadPath = new File("e:/hotel_prj/temp");
+	File uploadPath = new File("/usr/local/www/hotel_prj/temp");
 
 	if(!uploadPath.exists()){ // 경로에 업로드 폴더가 없으면 생성
 		uploadPath.mkdirs();

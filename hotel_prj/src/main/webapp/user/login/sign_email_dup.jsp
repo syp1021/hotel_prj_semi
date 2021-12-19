@@ -24,7 +24,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>이메일 중복확인</title>
-<link rel="stylesheet" type="text/css" href="http://211.63.89.141/common/css/main_v20211012.css" />   
+<link rel="stylesheet" type="text/css" href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css" />   
 <style type="text/css">
 
 #btn {
@@ -144,18 +144,18 @@ function sendEmail(email){
 	pageContext.setAttribute("resultEmail", resultEmail);
 %>
 <span style="color: #0D569F; font-weight: bold; ">
-입력하신<c:out value="${ param.email }"/>
+입력하신 &nbsp;<c:out value="${ param.email }"/>
 </span>은
 <c:choose>
 <c:when test="${ empty resultEmail }">
 <span style="color: #0D569F; font-weight: bold; ">
-사용가능합니다.
+사용 가능합니다.
 </span>
 <a href="javascript:sendEmail('${ param.email }')">[사용]</a>
 </c:when>
 <c:otherwise>
 <span style="color: #D75043; font-weight: bold; ">
-이미 사용중입니다.
+이미 사용 중입니다.
 </span>
 </c:otherwise>
 </c:choose>

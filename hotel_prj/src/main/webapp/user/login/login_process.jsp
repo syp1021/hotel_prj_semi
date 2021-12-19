@@ -20,10 +20,63 @@
     <title>Hotel_Ritz_Seoul</title>
     <!-- 메인 CSS -->
 	<link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
     
 	<style type = "text/css">
 	/* 		div {margin: 0px auto; width: 1130px;} */
+.hr1 {border-bottom: 1px solid #d3d3d3;}
+
+.loginTitle {
+	color: #333;
+	font-weight: bold;
+	font-size: 25px
+}
+
+#gohome {
+	border: 1px solid #E9E9E9;
+	font-size : 14px;
+	font-weight: bold;
+	background-color: #000;
+	color: #F5DF3C;
+	width: 130px;
+	height: 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
+
+#gohome:hover {
+	background-color: #F5dF4D;
+	color: #000000;
+	cursor: pointer;
+}
+
+
+#goLogin:hover {
+	background-color: #FCF4C0  ;
+	color: #333;
+	cursor: pointer;
+}
+
+#goLogin {
+	border: 1px solid #E9E9E9;
+	font-size : 15px;
+	font-weight: bold;
+	background-color: #FAFAFA;
+	color: #333;
+	width: 250px;
+	height : 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
+/*
+div { border: 1px solid #0000FF}
+td { border: 1px solid #FF0000}
+tr { border: 1px solid #FF0000}
+span { border: 1px solid #FF00FF}
+p { border: 1px solid #FF00FF}
+*/
 
 	</style>
 
@@ -37,11 +90,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	
-    <script src="http://211.63.89.141/common/bootstrap/holder.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/holder.js"></script>
 
-    <script src="http://211.63.89.141/common/bootstrap/ie-emulation-modes-warning.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/ie-emulation-modes-warning.js"></script>
 
-    <link href="http://211.63.89.141/common/bootstrap/carousel.css" rel="stylesheet">
+    <link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css" rel="stylesheet">
   </head>
 
 <!-- NAVBAR
@@ -77,19 +130,19 @@ flag=true;
 }catch(DataAccessException dae){
 }
 pageContext.setAttribute("loginFlag", flag);
-%>
+%> 
 		 <jsp:include page="../../main/main_header_nav.jsp"/>
  <div class="wrapper" >
  
-	<br/><br/><br/>
+	<br/><br/><br/><br/><br/>
 	<div class="container marketing">
-  <br/><br/>
-  <div style="width: 300px;text-align: center; margin:0px auto;">
-  <br>
-  <h2>로그인</h2>
-  </div>
-  <hr style="width: 500px"/>
-  <div style="width: 300px;text-align: center;margin:0px auto;">
+   <div style="text-align: center">
+		<p class="loginTitle">로그인</p>
+    <hr class="hr1">
+			</div>
+ 
+  
+<div style="width: 800px;text-align: center;margin:0px auto;">
   
 
 <script type="text/javascript">
@@ -97,13 +150,13 @@ pageContext.setAttribute("loginFlag", flag);
 </script>
 <br/><br/>
 <c:choose>
-<c:when  test="${ loginFlag }"><h4>안녕하세요</h4><br/>
-<h4><c:out value="${ param.id }"/>(으)로 로그인 하셨습니다.</h4><br/>
+<c:when  test="${ loginFlag }"><p style = "font-size: 18px; font-weight: bold; ">안녕하세요.</p><br/>
+<p style = "font-size: 18px; font-weight: bold; "><c:out value="${ param.id }"/>(으)로 로그인 하셨습니다.</p><br/>
 </c:when>
 <c:otherwise>
-아이디/비밀번호를 다시 확인해주세요
+<p style = "font-size: 18px; font-weight: bold; ">아이디/비밀번호를 다시 확인해 주세요.</p>
 <br/><br/><br/>
-<input type="button"  value="로그인" class="btn btn-default" onclick="location.href='login.jsp'">
+<input type="button" value="로그인" id = "goLogin" onclick="location.href='login.jsp'">
 </c:otherwise>
 </c:choose>
 </div>
@@ -113,7 +166,7 @@ pageContext.setAttribute("loginFlag", flag);
 
   <br/><br/>
  <div style="width:150px; text-align: center;margin:0px auto;">
-  <input type="button" class="btn btn-default" style="width: 100px;" value="홈으로" onclick="location.href='http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp'">
+  <input type="button" style="width: 100px;" id = "gohome" value="홈으로" onclick="location.href='http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp'">
 
   </div>
 </div>
@@ -125,6 +178,6 @@ pageContext.setAttribute("loginFlag", flag);
     ================================================== -->
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

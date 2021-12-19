@@ -12,7 +12,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="http://211.63.89.141/common/css/main_v20211012.css">
+<link rel="stylesheet" type="text/css" href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <style type="text/css">
 </style>
@@ -41,12 +41,12 @@ if(cnt ==1){
 %>
 <script type="text/javascript">
 alert("회원이 정상적으로 삭제되었습니다.");
-location.href="http://211.63.89.141/admin/admin_member/admin_member_select.jsp";
+location.href="http://team3.aws.sist.co.kr/admin/admin_member/admin_member_select.jsp";
 </script>	
 <%}else{%>
 <script type="text/javascript">
 	alert("이미 삭제된 회원입니다..");
-	location.href="http://211.63.89.141/admin/admin_member/admin_member_select.jsp";
+	location.href="http://team3.aws.sist.co.kr/admin/admin_member/admin_member_select.jsp";
 </script>
 <%}%>
 </c:catch>
@@ -54,7 +54,7 @@ location.href="http://211.63.89.141/admin/admin_member/admin_member_select.jsp";
 <c:if test="${not empty e}">
 	<strong>죄송합니다. 삭제 작업 중 문제가 발생했습니다.</strong><br/>
 	<strong>잠시 후 다시 시도해주세요.</strong><br/>
-	<a href="http://211.63.89.141/admin/admin_member/admin_member_select.jsp">뒤로 가기</a>
+	<a href="http://team3.aws.sist.co.kr/admin/admin_member/admin_member_select.jsp">뒤로 가기</a>
 </c:if>
 </body>
 </html>

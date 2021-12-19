@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 메인</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <!-- jQuery CDN -->
 <script
@@ -28,7 +28,7 @@
 	
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 <style type="text/css">
 
 #todayRes{
@@ -97,7 +97,7 @@ $("#toDayList tr").click(function(){
 		<c:import url="../common/admin_header_nav.jsp" /> 
 		
 		<div id="container">
-			<span id="mainMenu" onclick="http://211.63.89.141/admin/common/admin_main.jsp">오늘의 예약</span><br/>
+			<span id="mainMenu" onclick="http://team3.aws.sist.co.kr/admin/common/admin_main.jsp">오늘의 예약</span><br/>
 			<div id="todayRes">
 			
 		<%
@@ -146,7 +146,7 @@ $("#toDayList tr").click(function(){
 		</div>
 		
 		<!-- 테이블의 예약건(행) 클릭시 hidden값 설정 및 페이지 이동 -->
-		 <form name="moveFrm" id="moveFrm" action="http://211.63.89.141/admin/admin_reservation/admin_reservation_main.jsp" method="get">
+		 <form name="moveFrm" id="moveFrm" action="http://team3.aws.sist.co.kr/admin/admin_reservation/admin_reservation_main.jsp" method="get">
 		 <c:if test="${ not empty toDayData }">
 		 	<input type="hidden" name="year" id="year" value="<%=nowYear%>"/>
 		 	<input type="hidden" name="month" id="month" value="<%=nowMonth%>"/>

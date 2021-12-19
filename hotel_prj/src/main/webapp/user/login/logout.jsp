@@ -7,7 +7,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/common/css/main_v20211012.css" />   
+<link rel="stylesheet" type="text/css" href="http://team3.aws.sist.co.kr/jsp_prj/common/css/main_v20211012.css" />   
 <style type="text/css">
 
 </style>
@@ -29,7 +29,7 @@
 //세션을 사용하면 에러가발생.)
 session.invalidate();
 //페이지를 메인으로 이동한다.
-response.sendRedirect("http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp");
+response.sendRedirect("http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp");
 %>
 </body>
 </html>

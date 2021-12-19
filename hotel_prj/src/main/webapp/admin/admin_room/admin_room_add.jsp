@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 객실 추가</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <!-- jQuery CDN -->
 <script
@@ -25,7 +25,7 @@
 
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 	
 <style type="text/css">
 #tabDiv{
@@ -276,7 +276,7 @@ $(function(){
 	
 	$("#cancelBtn").click(function(){
 		alert("객실 추가를 취소합니다.");
-		location.href="http://211.63.89.141/admin/admin_room/admin_room_main.jsp";
+		location.href="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_main.jsp";
 	});//click
 	
 	//ajax 이벤트 등록
@@ -330,7 +330,7 @@ function addImg(){
 		var formData = new FormData(form);
 		
 		$.ajax({
-			url:"http://211.63.89.141/admin/admin_room/admin_room_img_upload_process.jsp",
+			url:"http://team3.aws.sist.co.kr/admin/admin_room/admin_room_img_upload_process.jsp",
 			type:"post",
 			data:formData,
 			dataType:"json",
@@ -378,7 +378,7 @@ function delImg(ele){
 	var queryString = "imgName="+imgName;
 	
 	$.ajax({
-		url:"http://211.63.89.141/admin/admin_room/admin_room_img_delete_process.jsp",
+		url:"http://team3.aws.sist.co.kr/admin/admin_room/admin_room_img_delete_process.jsp",
 		type:"post",
 		data:queryString,
 		dataType:"json",
@@ -445,9 +445,9 @@ $(window).bind("beforeunload", function(){
 		
 		<!-- 컨테이너 시작  -->
 		<div id="container">
-		<span id="mainMenu" onclick="location.href='http://211.63.89.141/admin/admin_room/admin_room_add.jsp'">객실 추가</span>
+		<span id="mainMenu" onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_room/admin_room_add.jsp'">객실 추가</span>
 		
-		<form name="roomAddFrm" id="roomAddFrm" action="http://211.63.89.141/admin/admin_room/admin_room_add_process.jsp" method="get">
+		<form name="roomAddFrm" id="roomAddFrm" action="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_add_process.jsp" method="get">
 		<div id="tabDiv">
 		<table id="mainTab">
 		<tr>
@@ -563,7 +563,7 @@ $(window).bind("beforeunload", function(){
 
 		<br/>
 
-		<form action="http://211.63.89.141/admin/admin_room/admin_room_img_upload_process.jsp" id="uploadfrm" method="post" enctype="multipart/form-data">
+		<form action="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_img_upload_process.jsp" id="uploadfrm" method="post" enctype="multipart/form-data">
 		<label>* 객실 이미지</label>
 		<span style="font-size:14px;">&nbsp;(※최대 5장까지 등록 가능합니다.)</span>
 		<label for="mainFile" class="btn btn-info btn-sm" id="mainUpLoad">메인 이미지 추가</label>

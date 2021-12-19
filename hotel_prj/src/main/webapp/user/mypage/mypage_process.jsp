@@ -43,6 +43,6 @@ String name=mDAO.selectLogin(mVO) ;//아이디와 비밀번호가 맞으면 이�
 	history.back();
 
 	</script>
-	<%}//end catch%>
+	<%}//end catch%> 
 
 

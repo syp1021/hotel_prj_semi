@@ -1,7 +1,6 @@
 package kr.co.sist.admin.room;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -21,11 +20,10 @@ public class RoomInsert {
 	 * temp 폴더의 이미지를 roomImages 폴더로 이동<br>
 	 * @param roomVO
 	 * @return
-	 * @throws SQLException
 	 * @throws DataAccessException
 	 * @throws IOException 
 	 */
-	public boolean insertProcess(RoomVO roomVO) throws DataAccessException, SQLException, IOException {
+	public boolean insertProcess(RoomVO roomVO) throws DataAccessException, IOException {
 		boolean totalFlag = false;
 		
 		boolean flag1 = insertRoom(roomVO);
@@ -46,9 +44,8 @@ public class RoomInsert {
 	 * @param roomVO
 	 * @return
 	 * @throws DataAccessException
-	 * @throws SQLException
 	 */
-	public boolean insertRoom(RoomVO roomVO) throws DataAccessException, SQLException {
+	public boolean insertRoom(RoomVO roomVO) throws DataAccessException {
 		boolean flag = false;
 
 		GetJdbcTemplate gjt = GetJdbcTemplate.getInstance();
@@ -84,9 +81,9 @@ public class RoomInsert {
 	 * 기타 이미지 존재 시, 이미지 테이블에 추가 insert
 	 * @param roomVO
 	 * @return
-	 * @throws SQLException
+	 * @throws DataAccessException
 	 */
-	public boolean insertImg(RoomVO roomVO) throws SQLException {
+	public boolean insertImg(RoomVO roomVO) throws DataAccessException {
 		boolean flag = false;
 
 		GetJdbcTemplate gjt = GetJdbcTemplate.getInstance();

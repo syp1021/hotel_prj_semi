@@ -24,7 +24,7 @@
 
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 
@@ -150,7 +150,7 @@ tr { border: 1px solid #FF0000}
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link href="http://211.63.89.141/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css"
 	rel="stylesheet">
 	
 <script type="text/javascript">
@@ -222,7 +222,7 @@ $(function(){
   		<table style = "width: 900px; margin: 0px auto">
   		<tr style = "width: 1000px; height: 50px">
   		<td style = "width: 50px;">
-  		<img style = "width: 30px" src = "http://211.63.89.141/main/main_images/cal_icon.png"/>
+  		<img style = "width: 30px" src = "http://team3.aws.sist.co.kr/main/main_images/cal_icon.png"/>
   		</td>
   		<td style = " width: 400px; font-size: 18px; font-weight: bold">
   		&nbsp;&nbsp;<%=paramSd %>&nbsp;-&nbsp;<%= paramEd %>&nbsp;(<%=diffDays %>박)
@@ -257,7 +257,7 @@ $(function(){
 				
 				 <div class="item active">
 					<img class="first-slide"
-						src="http://211.63.89.141/roomImages/<%= rv.getMain_img() %>"
+						src="http://team3.aws.sist.co.kr/roomImages/<%= rv.getMain_img() %>"
 						>
 					<div class="container">
 						<div class="carousel-caption"></div>
@@ -268,7 +268,7 @@ $(function(){
 				<c:forEach var = "img" items = "${ imgs }">
 				<div class="item ">
 					<img  
-						src="http://211.63.89.141/roomImages/<c:out value = "${ img.img_src }"/>"
+						src="http://team3.aws.sist.co.kr/roomImages/<c:out value = "${ img.img_src }"/>"
 						>
 					<div class="container">
 						<div class="carousel-caption"></div>
@@ -352,7 +352,7 @@ $(function(){
 			</div><br/>
 			<hr class = "hr1"><br/>
 			
-			<form name = "frmRes" method = "post" id = "frmRes" action = "http://211.63.89.141/user/reser_room/reservation3_card.jsp">
+			<form name = "frmRes" method = "post" id = "frmRes" action = "http://team3.aws.sist.co.kr/user/reser_room/reservation3_card.jsp">
 				<input type="hidden" name="room_no" id="room_no" value = "${param.room_no}"/>
 				 <input type="hidden" id="Sd" name="sd" value = "<%=paramSd %>"/>
 				 <input type="hidden" id="Ed"  name="ed" value = "<%=paramEd %>"/>
@@ -430,7 +430,7 @@ $(function(){
     <!-- ================================================== -->
 
 		<script
-			src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+			src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 	
 </body>
 </html>

@@ -9,7 +9,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="http://localhost/jsp_prj/common/css/main_v20211012.css" />   
+<link rel="stylesheet" type="text/css" href="http://team3.aws.sist.co.kr/jsp_prj/common/css/main_v20211012.css" />   
 <style type="text/css">
 
 </style>
@@ -47,12 +47,12 @@ session.invalidate();
 %>
 <script type="text/javascript">
 alert("회원 탈퇴가 완료되었습니다. \n그동안이용해주셔서 감사합니다");
-location.href="http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp";
+location.href="http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp";
 </script>	
 <%}else{%>
 <script type="text/javascript">
 	alert("죄송합니다. 잠시 후 다시 시도해주십시오.");
-	location.href="http://211.63.89.141/user/mypage/correction_member.jsp";
+	location.href="http://team3.aws.sist.co.kr/user/mypage/correction_member.jsp";
 </script>
 <%}%>
 </body>

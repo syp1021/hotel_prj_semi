@@ -16,7 +16,7 @@
 <title>Hotel_Ritz_Seoul</title>
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 #driveTitle {
@@ -97,7 +97,7 @@ p { border: 1px solid #FF00FF}
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<link href="http://211.63.89.141/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css"
 	rel="stylesheet">
 </head>
 
@@ -118,7 +118,7 @@ p { border: 1px solid #FF00FF}
 			<div style="text-align: center">
 				<p id="driveTitle">Drive-Thru</p>
 				<br /> <img
-					src="http://211.63.89.141/main/main_images/dining_main.jpg"
+					src="http://team3.aws.sist.co.kr/main/main_images/dining_main.jpg"
 					width="1000"><br /> <br /> <br />
 				<p id="driveText">드라이브 스루 픽업으로 간편하게! 레스토랑을 집에서 만나보세요</p>
 			</div>
@@ -136,7 +136,7 @@ p { border: 1px solid #FF00FF}
 							<span>MAIN TOWER 38층</span><br /> <br /> <a class="rstrLink"
 							href="#void">자세히 보기 > </a></td>
 						<td class="storeImg"><img
-							src="http://211.63.89.141/main/main_images/dining_momo.jpg" />
+							src="http://team3.aws.sist.co.kr/main/main_images/dining_momo.jpg" />
 						</td>
 					</tr>
 					<tr class="driveTr">
@@ -145,7 +145,7 @@ p { border: 1px solid #FF00FF}
 							<span>MAIN TOWER 38층</span><br /> <br /> <a class="rstrLink"
 							href="#void">자세히 보기 > </a></td>
 						<td class="storeImg"><img
-							src="http://211.63.89.141/main/main_images/dining_mu.jpg" />
+							src="http://team3.aws.sist.co.kr/main/main_images/dining_mu.jpg" />
 						</td>
 					</tr>
 					<tr class="driveTr">
@@ -154,7 +154,7 @@ p { border: 1px solid #FF00FF}
 							<span>MAIN TOWER 1층</span><br /> <br /> <a class="rstrLink"
 							href="#void">자세히 보기 > </a></td>
 						<td class="storeImg"><img
-							src="http://211.63.89.141/main/main_images/dining_delica.jpg" />
+							src="http://team3.aws.sist.co.kr/main/main_images/dining_delica.jpg" />
 						</td>
 					</tr>
 					<tr class="driveTr">
@@ -163,7 +163,7 @@ p { border: 1px solid #FF00FF}
 							<span>MAIN TOWER 32층</span><br /> <br /> <a class="rstrLink"
 							href="#void">자세히 보기 > </a></td>
 						<td class="storeImg"><img
-							src="http://211.63.89.141/main/main_images/dining_do.jpg" />
+							src="http://team3.aws.sist.co.kr/main/main_images/dining_do.jpg" />
 						</td>
 					</tr>
 					<tr class="driveTr">
@@ -172,7 +172,7 @@ p { border: 1px solid #FF00FF}
 							<span>MAIN TOWER 42층</span><br /> <br /> <a class="rstrLink"
 							href="#void">자세히 보기 > </a></td>
 						<td class="storeImg"><img
-							src="http://211.63.89.141/main/main_images/dining_la.jpg" />
+							src="http://team3.aws.sist.co.kr/main/main_images/dining_la.jpg" />
 						</td>
 					</tr>
 					<tr class="driveTr">
@@ -194,11 +194,11 @@ p { border: 1px solid #FF00FF}
 
 	</div>
 		<!-- footer import -->
-		<c:import url="http://211.63.89.141/main/main_footer.jsp" />
+		<c:import url="http://team3.aws.sist.co.kr/main/main_footer.jsp" />
 
 
 		<!--================================================== -->
 		<script
-			src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+			src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

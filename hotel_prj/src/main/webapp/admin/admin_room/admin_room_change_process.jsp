@@ -31,7 +31,7 @@
 <body>
 <!-- 파라미터 없는 루트로 들어왔을 때 redirect -->
 <c:if test="${empty param.roomName}">
-	<c:redirect url="http://211.63.89.141/admin/admin_room/admin_room_main.jsp"/>
+	<c:redirect url="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_main.jsp"/>
 </c:if>
  
 <!-- 웹 파라미터 받기 -->
@@ -73,7 +73,7 @@ if(flag1 && flag2 && flag3){
 %>
 <script type="text/javascript">
 	alert("객실 정보가 정상적으로 수정되었습니다.");
-	location.href="http://211.63.89.141/admin/admin_room/admin_room_main.jsp";
+	location.href="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_main.jsp";
 </script>
 <% 
 String[] imgList = request.getParameterValues("imgList");
@@ -86,7 +86,7 @@ ul.removeAllImg();//temp 파일 삭제
 %>
 <script type="text/javascript">
 	alert("죄송합니다. 잠시 후 다시 시도해주세요.");
-	//location.href="http://211.63.89.141/admin/admin_room_main.jsp";
+	//location.href="http://team3.aws.sist.co.kr/admin/admin_room_main.jsp";
 </script>
 <% }%>
 </c:catch>
@@ -94,7 +94,7 @@ ul.removeAllImg();//temp 파일 삭제
 <c:if test="${not empty e}">
 	<strong>죄송합니다. 객실 추가 작업 중 문제가 발생했습니다.</strong><br/>
 	<strong>잠시 후 다시 시도해주세요.</strong><br/>
-	<a href="http://211.63.89.141/admin/admin_room/admin_room_main.jsp">뒤로 가기</a>
+	<a href="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_main.jsp">뒤로 가기</a>
 </c:if> 
 
 </body>

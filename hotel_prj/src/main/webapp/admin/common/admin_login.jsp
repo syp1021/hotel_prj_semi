@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 관리자 로그인</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 	
 <!-- jQuery CDN -->
 <script
@@ -24,7 +24,7 @@
 
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 
 <style type="text/css">
 #container {
@@ -102,14 +102,14 @@
 	<div id="wrap">
 		<!-- header  -->
 		<div id="header">
-			<span class="cursor" onclick="location.href='http://211.63.89.141/admin/common/admin_login.jsp'">Hotel Ritz Seoul</span>
+			<span class="cursor" onclick="location.href='http://team3.aws.sist.co.kr/admin/common/admin_login.jsp'">Hotel Ritz Seoul</span>
 			<span class="glyphicon glyphicon-user" aria-hidden="true" id="adminImg" ></span>
 			<span id="admin"> admin</span>
 		</div>
 
 		<!-- container  -->
 		<div id="container">
-			<form action="http://211.63.89.141/admin/common/admin_login_process.jsp" name="login_form" method="post"
+			<form action="http://team3.aws.sist.co.kr/admin/common/admin_login_process.jsp" name="login_form" method="post"
 				id="frm">
 				<div class="login">
 					<div class="login_id">
@@ -130,7 +130,7 @@
 		</div>
 		
 		<!-- footer import -->
-		<c:import url="http://211.63.89.141/admin/common/admin_footer.jsp" />
+		<c:import url="http://team3.aws.sist.co.kr/admin/common/admin_footer.jsp" />
 	</div>
 </body>
 </html>

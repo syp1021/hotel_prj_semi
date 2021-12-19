@@ -26,7 +26,7 @@
 
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 .hr1 {
@@ -42,7 +42,7 @@
 
 .resChk {
 	width: 1000px;
-	height: 1800px;
+	height: 1900px;
 	color: #5A5A5A;
 	margin: 0px auto;
 	text-align: center;
@@ -120,6 +120,17 @@
 	font-weight: bold
 }
 
+.notice {
+	width: 1000px;
+	height: 70px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	table-layout: fixed;
+	padding: 5px;
+	text-align: left;
+}
+
 .total {
 	width: 1000px;
 	height: 70px;
@@ -127,6 +138,7 @@
 	font-weight: bold;
 	color: #333;
 	table-layout: fixed;
+	padding: 5px;
 }
 
 .guideDiv {
@@ -145,7 +157,7 @@
 
 .addBack {
 	width: 1000px;
-	height: 150px;
+	height: 100px;
 	background-color: #FAFAFA;
 	padding: 50px
 }
@@ -178,15 +190,8 @@
 }
 
 .button:hover{
-	background-color: #FCF4C0 ;
-	border: 1px solid #E9E9E9;
-	font-weight: bold;
-	font-size: 15px;
-	color: #333;
-	width: 130px;
-	height: 40px;
-	text-align: center;
-	border-radius: 7px;
+	background-color: #F5dF4D;
+	color: #000000;
 	cursor: pointer;
 }
 
@@ -205,7 +210,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link href="http://localhost/jsp_prj/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/jsp_prj/common/bootstrap/carousel.css"
 	rel="stylesheet">
 
 
@@ -216,7 +221,7 @@
 
 	function main() {
 		alert("메인 페이지로 이동합니다.");
-		location.href = "http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp"
+		location.href = "http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp"
 	}
 	function print() {
 		alert("인쇄를 시작하겠습니다..");
@@ -368,7 +373,7 @@ request.setCharacterEncoding("UTF-8");
 					<table class="chkTab">
 						<tr>
 							<td style="width: 500px">
-							<img src="http://211.63.89.141/roomImages/${ rVO.main_img }"
+							<img src="http://team3.aws.sist.co.kr/roomImages/${ rVO.main_img }"
 								width="480" height="330" /><br /> <br /></td>
 
 							<td>
@@ -463,16 +468,17 @@ request.setCharacterEncoding("UTF-8");
 						</div>
 			</div>
 			<!-- guideDiv -->
-			<br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br />
+			 <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br />
 
 
 				<div>
-					<table class="total">
-						<td>상기 홈페이지 요금은 정상가에서 할인된 금액으로 중복할인은 불가능합니다. 예약 취소 및 변경은 체크인
-							하루전 18:00(한국시간)까지 가능합니다. 예약하신 일자에 체크인 되지 않거나 또는 위의 지정 시간 이후에 예약을
-							취소 했을 경우에는 예약 사항에 대해 노·쇼(No show)처리 되며, 이에따른 위약금으로 예약 첫날에 해당하는 1박
-							객실 요금이 청구되오니 유의하시기 바랍니다. 일부 프로모션 특가상품은 별도의 취소 규정이 적용되며, 취소 첫날 1박
-							요금의 100%가 위약금으로 부과 됩니다.</td>
+					<table class="notice">
+						<td>
+						● 상기 홈페이지 요금은 정상가에서 할인된 금액으로 중복 할인은 불가능합니다. <br />
+						● 예약 취소 및 변경은 체크인 하루 전 18:00(한국시간)까지 가능합니다. <br />
+						● 예약하신 일자에 체크인 되지 않거나 또는 위의 지정 시간 이후에 예약을 취소했을 경우에는 예약 사항에 대해 노·쇼(No show)처리되며, 이에 따른 위약금으로 예약 첫날에 해당하는 1박
+							객실 요금이 청구되오니 유의하시기 바랍니다. <br />
+						● 일부 프로모션 특가 상품은 별도의 취소 규정이 적용되며, 취소 첫날 1박 요금의 100%가 위약금으로 부과됩니다.<br /></td>
 					</table>
 				</div>
 				<br /> <br /> <br />
@@ -499,7 +505,7 @@ request.setCharacterEncoding("UTF-8");
 
 
 			<br /> <br />
-			<div id="map" style="width: 1000px; height: 350px; magin: 0px auto; "></div>
+			<div id="map" style="width: 1000px; height: 500px; magin: 0px auto; "></div>
 
 
 			<br /> <br /> <br /> <br />
@@ -526,7 +532,7 @@ request.setCharacterEncoding("UTF-8");
 	<!-- ================================================== -->
 
 	<script
-		src="http://localhost/jsp_prj/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+		src="http://team3.aws.sist.co.kr/jsp_prj/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 	</div>
 </body>
 </html>

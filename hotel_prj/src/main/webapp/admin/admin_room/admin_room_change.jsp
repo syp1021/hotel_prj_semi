@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 객실 수정</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <!-- jQuery CDN -->
 <script
@@ -31,7 +31,7 @@
 
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 	
 <style type="text/css">
 #tabDiv{
@@ -364,7 +364,7 @@ function addImg(){
 		var formData = new FormData(form);
 		
 		$.ajax({
-			url:"http://211.63.89.141/admin/admin_room/admin_room_img_upload_process.jsp",
+			url:"http://team3.aws.sist.co.kr/admin/admin_room/admin_room_img_upload_process.jsp",
 			type:"post",
 			data:formData,
 			dataType:"json",
@@ -411,7 +411,7 @@ function delImg(ele){
 	var queryString = "imgName="+imgName;
 	
 	$.ajax({
-		url:"http://211.63.89.141/admin/admin_room/admin_room_img_delete_process.jsp",
+		url:"http://team3.aws.sist.co.kr/admin/admin_room/admin_room_img_delete_process.jsp",
 		type:"post",
 		data:queryString,
 		dataType:"json",
@@ -473,7 +473,7 @@ $(window).bind("beforeunload", function(){
 <body>
 <!-- 객실 메인 페이지에서 넘어오지 않았을 경우 redirect 해주기 (객실 선택 필요) -->
 	<c:if test="${empty param.selectedRName}">
-  	  <c:redirect url="http://211.63.89.141/admin/admin_room/admin_room_main.jsp"/>
+  	  <c:redirect url="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_main.jsp"/>
 	</c:if> 
 	
 	<div id="wrap">
@@ -483,7 +483,7 @@ $(window).bind("beforeunload", function(){
 		
 		<!-- 컨테이너 시작  -->
 		<div id="container" style="padding:50px"> 
-		<span id="mainMenu" onclick="location.href='http://211.63.89.141/admin/admin_room/admin_room_change.jsp'">객실 정보 수정</span>
+		<span id="mainMenu" onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_room/admin_room_change.jsp'">객실 정보 수정</span>
 		
 		<!-- 파라미터 받기 -->
 		<%
@@ -493,7 +493,7 @@ $(window).bind("beforeunload", function(){
 		pageContext.setAttribute("rList", rList);
 		%>
 		
-		<form name="roomChgFrm" id="roomChgFrm" action="http://211.63.89.141/admin/admin_room/admin_room_change_process.jsp" method="get">
+		<form name="roomChgFrm" id="roomChgFrm" action="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_change_process.jsp" method="get">
 		<div id="tabDiv">
 		<c:forEach var="rVO" items="${rList}">
 					
@@ -650,7 +650,7 @@ $(window).bind("beforeunload", function(){
 		}//end if
 		
 		//temp로 이미지 옮기기
-		uil.moveImgtoTemp(imgList);
+		uil.moveImgtoTemp(imgList); 
 		pageContext.setAttribute("imgList", imgList);
 		%>
 		
@@ -662,7 +662,7 @@ $(window).bind("beforeunload", function(){
 
 		<br/>
 
-		<form action="http://211.63.89.141/admin/admin_room/admin_room_img_upload_process.jsp" id="uploadfrm" method="post" enctype="multipart/form-data">
+		<form action="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_img_upload_process.jsp" id="uploadfrm" method="post" enctype="multipart/form-data">
 		<label>* 객실 이미지</label>
 		<span style="font-size:14px;">&nbsp;(※최대 5장까지 등록 가능합니다.)</span>
 		<label for="mainFile" class="btn btn-info btn-sm" id="mainUpLoad">메인 이미지 추가</label>
@@ -715,7 +715,7 @@ $(window).bind("beforeunload", function(){
 			<input type="reset" id="cancelBtn" name="cancelBtn" class="btn btn-default btn-lg" value="취소"/>
 		</div>
 		
-		<form name="statusFrm" id="statusFrm" action="http://211.63.89.141/admin/admin_room/admin_room_status_update_process.jsp" method="get">
+		<form name="statusFrm" id="statusFrm" action="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_status_update_process.jsp" method="get">
 			<input type="hidden" name="rStatus" id="rStatus"/>
 			<input type="hidden" name="statusRNo" id="statusRNo"/>
 		</form>

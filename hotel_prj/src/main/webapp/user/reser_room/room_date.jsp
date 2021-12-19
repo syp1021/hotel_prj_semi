@@ -21,7 +21,7 @@
 
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 .hr1 {border-bottom: 1px solid #d3d3d3; }
@@ -106,11 +106,11 @@ tr { border: 1px solid #FFFF00}
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link href="http://211.63.89.141/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css"
 	rel="stylesheet">
 <!--  zebra_datepicker -->
-<script src="http://211.63.89.141/common/zebra_datepicker/zebra_datepicker.min.js"></script>
-<link rel="stylesheet" href="http://211.63.89.141/common/zebra_datepicker/css/default/zebra_datepicker.min.css">
+<script src="http://team3.aws.sist.co.kr/common/zebra_datepicker/zebra_datepicker.min.js"></script>
+<link rel="stylesheet" href="http://team3.aws.sist.co.kr/common/zebra_datepicker/css/default/zebra_datepicker.min.css">
 
 <script type="text/javascript">
 
@@ -118,7 +118,7 @@ tr { border: 1px solid #FFFF00}
 	var userId = '<%=(String)session.getAttribute("id") %>';
 	if(userId == "null"){
 		alert("예약은 로그인 후 가능합니다. ")
-		location.href = "http://211.63.89.141/user/login/login.jsp";
+		location.href = "http://team3.aws.sist.co.kr/user/login/login.jsp";
 		return;
 	}//endif
 }//loginChk --%>
@@ -150,7 +150,7 @@ $(function(){
 		 var userId = '<%=(String)session.getAttribute("id") %>';
 			if(userId == "null"){
 				alert("예약은 로그인 후 가능합니다. ")
-				location.href = "http://211.63.89.141/user/login/login.jsp";
+				location.href = "http://team3.aws.sist.co.kr/user/login/login.jsp";
 				return;
 			}//endif
 
@@ -175,7 +175,7 @@ $(function(){
 		 let queryString = "start_date="+sd+"&end_date="+ed+"&adult="+adult+"&child="+child;
 		
 		 $.ajax({
-			 url:"ajax_room_date.jsp",
+			 url:"http://team3.aws.sist.co.kr/user/reser_room/ajax_room_date.jsp",
 			 type:"post",
 			 data:queryString,
 			 dataType:"json",
@@ -202,7 +202,7 @@ $(function(){
 				//요기서 디자인하기
 				});//each
 				
-				location.href="room_reserve.jsp?"+param;
+				location.href="http://team3.aws.sist.co.kr/user/reser_room/room_reserve.jsp?"+param;
 		
 			 }//success
 			 
@@ -212,11 +212,11 @@ $(function(){
 	});//click
 	
 	$("#roomIntroBtn").click(function(){
-		location.href="http://211.63.89.141/user/reser_room/room_intro.jsp";
+		location.href="http://team3.aws.sist.co.kr/user/reser_room/room_intro.jsp";
 	})//table click
 	
 	$("#roomReserBtn").click(function(){
-		location.href="http://211.63.89.141/user/reser_room/room_date.jsp";
+		location.href="http://team3.aws.sist.co.kr/user/reser_room/room_date.jsp";
 	})//table click
 	
 	
@@ -341,7 +341,7 @@ pageContext.setAttribute("userId", userId);
 	<!-- ================================================== -->
 
 	<script
-		src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+		src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

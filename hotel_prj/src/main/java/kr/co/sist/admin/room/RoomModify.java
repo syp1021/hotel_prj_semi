@@ -1,6 +1,5 @@
 package kr.co.sist.admin.room;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.dao.DataAccessException;
@@ -80,9 +79,9 @@ public class RoomModify {
 	 * 기존에 기타 이미지가 있으면 삭제
 	 * @param roomVO
 	 * @return
-	 * @throws SQLException
+	 * @throws DataAccessException
 	 */
-	public boolean deleteImg(RoomVO roomVO) throws SQLException {
+	public boolean deleteImg(RoomVO roomVO) throws DataAccessException {
 		boolean flag = false;
 
 		//기타이미지 없으면 delete 처리안하고 true return

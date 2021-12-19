@@ -23,7 +23,7 @@
 <title>Hotel_Ritz_Seoul</title>
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 
@@ -144,12 +144,12 @@ tr { border: 1px solid #FF0000}
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<script src="http://localhost/jsp_prj/common/bootstrap/holder.js"></script>
+<script src="http://team3.aws.sist.co.kr/jsp_prj/common/bootstrap/holder.js"></script>
 
 <script
-	src="http://211.63.89.141/common/bootstrap/ie-emulation-modes-warning.js"></script>
+	src="http://team3.aws.sist.co.kr/common/bootstrap/ie-emulation-modes-warning.js"></script>
 
-<link href="http://211.63.89.141/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css"
 	rel="stylesheet">
 
 
@@ -188,15 +188,15 @@ function roomDetail( Hroom,paramSd,paramEd,paramAdult ,paramChild){
 $(function(){
 	$("#goHome").click(function(){
 
-		location.href="http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp";
+		location.href="http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp";
 	})//click
 	
 	$("#roomIntroBtn").click(function(){
-		location.href="http://211.63.89.141/user/reser_room/room_intro.jsp";
+		location.href="http://team3.aws.sist.co.kr/user/reser_room/room_intro.jsp";
 	})//table click
 	
 	$("#roomReserBtn").click(function(){
-		location.href="http://211.63.89.141/user/reser_room/room_date.jsp";
+		location.href="http://team3.aws.sist.co.kr/user/reser_room/room_date.jsp";
 	})//table click
 	
 	
@@ -239,7 +239,7 @@ $(function(){
   		<table style = "width: 900px; margin: 0px auto">
   		<tr style = "width: 1000px; height: 50px">
   		<td style = "width: 50px;">
-  		<img style = "width: 30px" src = "http://211.63.89.141/main/main_images/cal_icon.png"/>
+  		<img style = "width: 30px" src = "http://team3.aws.sist.co.kr/main/main_images/cal_icon.png"/>
   		</td>
   		<td style = " width: 400px; font-size: 18px; font-weight: bold">
   		&nbsp;&nbsp;<%=paramSd %>&nbsp;-&nbsp;<%= paramEd %>&nbsp;(<%=diffDays %>박)
@@ -279,7 +279,7 @@ $(function(){
 		<table style="width: 1000px;">
 			<tr>
 				<td style="width: 252px;" rowspan="2">
-				<img src="http://211.63.89.141/roomImages/${searchRoom.main_img }"
+				<img src="http://team3.aws.sist.co.kr/roomImages/${searchRoom.main_img }"
 					style="width: 270px; height: 187px;">
 				</td>
 				<td style="height: 120px;"><br><br><br>
@@ -313,7 +313,7 @@ $(function(){
 	<br><br><br><br>
 	<hr class = "hr1">
 	
-	<form name="frm" id="hiddenFrm" action="http://211.63.89.141/user/reser_room/reservation2.jsp" method = "post">
+	<form name="frm" id="hiddenFrm" action="http://team3.aws.sist.co.kr/user/reser_room/reservation2.jsp" method = "post">
 	 <input type="hidden" id="Room_no" name = "room_no"/>
 	 <input type="hidden" id="Sd" name="sd"/>
 	 <input type="hidden" id="Ed"  name="ed"/>
@@ -335,6 +335,6 @@ $(function(){
 	<!--================================================== -->
 
 	<script
-		src="http://localhost/jsp_prj/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+		src="http://team3.aws.sist.co.kr/jsp_prj/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

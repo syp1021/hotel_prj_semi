@@ -13,13 +13,73 @@
 
 	<!-- 메인 CSS -->
 	<link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 	
     <title>Hotel_Ritz_Seoul</title>
     <!-- 메인 CSS -->
 	<link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 	<style type = "text/css">
+	
+.hr1 {border-bottom: 1px solid #d3d3d3;}
+
+.MyTitle {
+	color: #333;
+	font-weight: bold;
+	font-size: 30px
+}	
+	
+#pass {
+	width: 250px;
+	height : 40px;
+	margin: 0px auto;
+}
+
+#btn:hover {
+	background-color: #FCF4C0  ;
+	color: #333;
+	cursor: pointer;
+}
+
+#btn {
+	border: 1px solid #E9E9E9;
+	font-size : 15px;
+	font-weight: bold;
+	background-color: #FAFAFA;
+	color: #333;
+	width: 250px;
+	height : 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
+
+#gohome {
+	border: 1px solid #E9E9E9;
+	font-size : 14px;
+	font-weight: bold;
+	background-color: #000;
+	color: #F5DF3C;
+	width: 130px;
+	height: 40px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 7px;
+}
+
+#gohome:hover {
+	background-color: #F5dF4D;
+	color: #000000;
+	cursor: pointer;
+}
+
+/*
+div { border: 1px solid #0000FF}
+td { border: 1px solid #FF0000}
+tr { border: 1px solid #FF0000}
+span { border: 1px solid #FF00FF}
+p { border: 1px solid #FF00FF}
+*/
 	</style>
 
 
@@ -48,52 +108,56 @@ $(function() {
 
 function home(){
 	alert("메인페이지로 이동합니다.");
-	location.href="http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp"
+	location.href="http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp"
 }
 
 </script>
 </head>
  <jsp:useBean id="mVO" class="kr.co.sist.user.login.memberVO" scope="page"/>
 <jsp:setProperty property="*" name="mVO"/><!--  입력정보-->
-<%
+ <%
 	String id=(String)session.getAttribute("id");
 if(id==null){//세션이 존재하지 않으면 
-	response.sendRedirect("http://211.63.89.141/user/login/login.jsp");
+	response.sendRedirect("http://team3.aws.sist.co.kr/user/login/login.jsp");
 }//end if
-%>
+%> 
 
 <!-- NAVBAR
 ================================================== -->
   <body>
  		 <jsp:include page="../../main/main_header_nav.jsp"/>
  <form action="mypage_process.jsp"  method="post" id="frm" name="frm">
-<div>		 
-<br/>
-<h4>&nbsp;&nbsp;홈 / 마이페이지</h4>
-</div>
-<br/><br/><br/>
-<div style = "width:600px; text-align: center;border-bottom:2px solid #d3d3d3 ;margin:0px auto;">
-<h2>마이페이지</h2>
-</div>
+ 
+<br/><br/><br/><br/><br/><br/>
+<div class="container" style="margin: 0px auto;">
+
+<div style="text-align: center">
+		<p class="MyTitle">마이페이지</p><br/>
+ <hr class="hr1">
+	</div>
+
+
 <div style = "text-align: center; ">
 <br/><br/><br/>
 <input type="hidden" value="${ id }">
-<h4>비밀번호를 입력해주세요.</h4>
-<input type="password" name="pass" id="pass" style="width:250px;height:40px" placeholder="현재 비밀번호를 입력하세요">
-<br/><br/>
-<button type="button" class="btn btn-default"  id="btn" style="width:250px;height:40px" >확인</button><!--  button으로 해야지 submit올 하면 실패하더라도전송됩니다.-->
-<br/><br/><br/>
-<button type="button" class="btn btn-default" style="width:75px; height:30px;" onclick="home()">홈으로</button>
+<p style = "font-size: 18px; font-weight: bold; ">비밀번호를 입력해주세요.</p>
+
+
+<input type="password" name="pass" id="pass" class="form-control" placeholder="현재 비밀번호를 입력하세요">
+<br/>
+<button type="button" id="btn" >확인</button><!--  button으로 해야지 submit올 하면 실패하더라도전송됩니다.-->
+<br/><br/><br/><br/><br/><br/>
+<button type="button" id = "gohome" onclick="home()">홈으로</button>
 
 </div>
-
+</div>
    </form>
+   
   <br/><br/><br/><br/><br/><br/>
-<body>
-<div class="container marketing">
+</body>
+
   <!-- FOOTER -->
 
-    </div>
  <jsp:include page="../../main/main_footer.jsp"/>
     <!-- /.container -->
 
@@ -102,6 +166,6 @@ if(id==null){//세션이 존재하지 않으면
     ================================================== -->
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

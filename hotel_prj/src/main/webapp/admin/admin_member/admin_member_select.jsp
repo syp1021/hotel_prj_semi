@@ -18,7 +18,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 회원관리</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <!-- jQuery CDN -->
 <script
@@ -32,7 +32,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 <style type="text/css">
 
 .button {
@@ -148,9 +148,9 @@ pageContext.setAttribute("memberData", list);
 		<!-- 컨테이너 시작 -->
 		<div id="container">
 			<div id="naviBar2">
-				<span id="mainMenu" onclick="location.href='http://211.63.89.141/admin/admin_member/admin_member_select.jsp'">회원조회</span> &nbsp; 
-				<span id="mainMenu" style="text-decoration: none" onclick="location.href='http://211.63.89.141/admin/admin_member/admin_member_delete.jsp'">탈퇴회원</span>
-				<form name="frm_search" action="http://211.63.89.141/admin/admin_member/admin_member_specific_select.jsp" method="post">
+				<span id="mainMenu" onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_member/admin_member_select.jsp'">회원조회</span> &nbsp; 
+				<span id="mainMenu" style="text-decoration: none" onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_member/admin_member_delete.jsp'">탈퇴회원</span>
+				<form name="frm_search" action="http://team3.aws.sist.co.kr/admin/admin_member/admin_member_specific_select.jsp" method="post">
 				<input type="text" name="search" placeholder="ID조회" id="id_search" class="form-control" maxlength="10"/>
 				<input type="submit" value="검색" name="search" class="btn btn-default" id="search" />
 				</form>	
@@ -189,7 +189,7 @@ pageContext.setAttribute("memberData", list);
 			</table>
 		</div>
 		<!-- 삭제버튼 클릭시 hidden값 설정 및 페이지 이동 -->
-		 <form name="delFrm" id="delFrm" action="http://211.63.89.141/admin/admin_member/admin_member_del_process.jsp" method="post">
+		 <form name="delFrm" id="delFrm" action="http://team3.aws.sist.co.kr/admin/admin_member/admin_member_del_process.jsp" method="post">
 		 	<input type="hidden" name="delId" id="delId"/>
 		 </form>
 		<!-- footer import -->

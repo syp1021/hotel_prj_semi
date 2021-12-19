@@ -15,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 객실관리</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 
 <!-- jQuery CDN -->
 <script
@@ -30,11 +30,11 @@
 
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 	
 <!-- viewroom CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_room_roomview.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_room_roomview.css">
 	
 <style type="text/css">
 #addBtn{
@@ -78,7 +78,7 @@ $(function(){
 	
 	//객실추가 시 
 	 $("#addBtn").click(function(){
-		 location.href="http://211.63.89.141/admin/admin_room/admin_room_add.jsp";
+		 location.href="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_add.jsp";
 	 });//click
 	 
 	 //객실정보수정 시
@@ -113,7 +113,7 @@ function showRoomDetail(roomName){
 	
 		<!-- 컨테이너 시작 -->
 		<div id="container" style="padding:50px"> 
-		<span id="mainMenu" onclick="location.href='http://211.63.89.141/admin/admin_room/admin_room_main.jsp'">객실</span><br/>
+		<span id="mainMenu" onclick="location.href='http://team3.aws.sist.co.kr/admin/admin_room/admin_room_main.jsp'">객실</span><br/>
 		<input type="button" id="addBtn" class="btn btn-primary" value="객실 추가"/>
 		
 		<div id="roomList"> 
@@ -132,7 +132,7 @@ function showRoomDetail(roomName){
 		         <c:set var="rStatus" value="roomStatusN"/>
 		         <c:set var="height" value="style='height:110px'"/>
 		 	 </c:if>
-  			<img src="http://211.63.89.141/admin/room_status_img/${rStatus}.png" ${height} class="rStatus img-rounded"
+  			<img src="http://team3.aws.sist.co.kr/admin/room_status_img/${rStatus}.png" ${height} class="rStatus img-rounded"
   			onclick="showRoomDetail( '${roomList.getRoomName()}' )"/>
 			<br/>
 			<c:out value="${roomList.getRoomName()}"/></td>
@@ -141,7 +141,7 @@ function showRoomDetail(roomName){
 		</table>
 		</div> <!-- roomList div -->
 
-		<form name="frm" id="frm" action="http://211.63.89.141/admin/admin_room/admin_room_main.jsp" method="get">
+		<form name="frm" id="frm" action="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_main.jsp" method="get">
 			<input type="hidden" name="rName" id="rName"/>
 		</form>
 		
@@ -152,7 +152,7 @@ function showRoomDetail(roomName){
 		pageContext.setAttribute("rmVO", room.selectRoomInfo(rName,null));
 		%>
 		<div id="viewRoom">
-		<form name ="chgFrm" id ="chgFrm"  action="http://211.63.89.141/admin/admin_room/admin_room_change.jsp" method="post">
+		<form name ="chgFrm" id ="chgFrm"  action="http://team3.aws.sist.co.kr/admin/admin_room/admin_room_change.jsp" method="post">
 		<input type="button" id="chgBtn" name="chgBtn" class="btn btn-primary" value="객실 정보 수정"/>
 			<input type="hidden" name="selectedRName" id="selectedRName"/>
 		<br/>
@@ -253,7 +253,7 @@ function showRoomDetail(roomName){
 		
 		<label>* 객실 이미지 </label>
 		<br/>
-		<img src="http://211.63.89.141/roomImages/${rmVO.img}" title="${rmVO.img}" name="img" class="viewImg"/>
+		<img src="http://team3.aws.sist.co.kr/roomImages/${rmVO.img}" title="${rmVO.img}" name="img" class="viewImg"/>
 		<input type="hidden" name="mainImg" value="${rmVO.img}"/>
 		</c:forEach>
 		<%
@@ -262,7 +262,7 @@ function showRoomDetail(roomName){
 		%>
  		<c:if test="${not empty imgList}">
 		 <c:forEach var="img" items="${imgList}">
-		   <img src="http://211.63.89.141/roomImages/${img.imgSrc}" title="${img.imgSrc}" name="img" class="viewImg"/>
+		   <img src="http://team3.aws.sist.co.kr/roomImages/${img.imgSrc}" title="${img.imgSrc}" name="img" class="viewImg"/>
 			<input type="hidden" name="otherImg" value="${img.imgSrc}" />
 		 </c:forEach>
 		</c:if> <!-- not empty imgList -->

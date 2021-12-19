@@ -20,7 +20,7 @@
 
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 #promo {
@@ -123,7 +123,7 @@ p { border: 1px solid #FF00FF}
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link href="http://211.63.89.141/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css"
 	rel="stylesheet">
 </head>
 
@@ -152,7 +152,7 @@ p { border: 1px solid #FF00FF}
 			<div class="carousel-inner" role="listbox" style = "margin: 0px auto; height: 800px">
 				<div class="item active" style = "margin: 0px auto; height: 800px">
 					<img class="first-slide"
-						src="http://211.63.89.141/main/main_images/main1.jpg"
+						src="http://team3.aws.sist.co.kr/main/main_images/main1.jpg"
 						style= "min-width: 2150px; height: 800px; margin: 0px auto;"
 						alt="First slide">
 						<!-- style="min-width: 1600px; height: 800px; margin: 0px auto;" -->
@@ -169,7 +169,7 @@ p { border: 1px solid #FF00FF}
 				<div class="item" style="margin: 0px auto; height: 800px">
 					<img class="second-slide"
 						style="min-width: 2150px; margin: 0px auto; height: 800px"
-						src="http://211.63.89.141/main/main_images/main2.jpg"
+						src="http://team3.aws.sist.co.kr/main/main_images/main2.jpg"
 						alt="Second slide">
 					<div class="container">
 						<div class="carousel-caption"></div>
@@ -178,7 +178,7 @@ p { border: 1px solid #FF00FF}
 				<div class="item" style="margin: 0px auto; height: 800px">
 					<img class="third-slide"
 						style="min-width: 2150px; margin: 0px auto; height: 800px"
-						src="http://211.63.89.141/main/main_images/main3.jpg"
+						src="http://team3.aws.sist.co.kr/main/main_images/main3.jpg"
 						/>
 					<div class="container">
 						<div class="carousel-caption"></div>
@@ -187,7 +187,7 @@ p { border: 1px solid #FF00FF}
 				<div class="item" style="margin: 0px auto; height: 800px">
 					<img class="fourth-slide"
 						style="min-width: 2150px; margin: 0px auto; height: 800px"
-						src="http://211.63.89.141/main/main_images/main4.jpg"
+						src="http://team3.aws.sist.co.kr/main/main_images/main4.jpg"
 						/>
 					<div class="container">
 						<div class="carousel-caption"></div>
@@ -241,17 +241,17 @@ RoomVO rv = rs.selectRoomInfo(room_no);
 				<c:set var = "i" value = "${ i + 1 }" />
 				<div class="col-lg-4">
 					<div class="roomImg">
-						<a href="http://211.63.89.141/user/reser_room/room_intro.jsp#target${i }">
-							<img src="http://211.63.89.141/roomImages/${ mainRoom.main_img }"
+						<a href="http://team3.aws.sist.co.kr/user/reser_room/room_intro.jsp#target${i }">
+							<img src="http://team3.aws.sist.co.kr/roomImages/${ mainRoom.main_img }"
 							width="350" height="200">
 						</a>
 					</div>
-					<a href="http://211.63.89.141/user/reser_room/room_intro.jsp#target${i }" class="roomName">
+					<a href="http://team3.aws.sist.co.kr/user/reser_room/room_intro.jsp#target${i }" class="roomName">
 					<h3 class="roomName" > ${ mainRoom.r_name }</h3></a>
 					
 					<p>
 						<a class="btn btn-default"
-							href="http://211.63.89.141/user/reser_room/room_intro.jsp#target${i }"
+							href="http://team3.aws.sist.co.kr/user/reser_room/room_intro.jsp#target${i }"
 							role="button" style = "margin-top: 10px ">View details &raquo;</a>
 					</p>
 				</div><!-- col-lg-4 -->
@@ -276,11 +276,11 @@ RoomVO rv = rs.selectRoomInfo(room_no);
 								<td>
 									<div class="promImg">
 										<a
-											href="http://211.63.89.141/main/specialOffer.jsp"><img
-											src="http://211.63.89.141/main//main_images/SO01.jpg"
+											href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"><img
+											src="http://team3.aws.sist.co.kr/main//main_images/SO01.jpg"
 											width="450" height="300"></a>
 									</div> <a
-									href="http://211.63.89.141/main/specialOffer.jsp"
+									href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"
 									class="promTitle"><h2 class="promTitle">Long and
 											Lasting Love</h2></a>
 									<p>
@@ -291,11 +291,11 @@ RoomVO rv = rs.selectRoomInfo(room_no);
 								<td>
 									<div class="promImg">
 										<a
-											href="http://211.63.89.141/main/specialOffer.jsp"><img
-											src="http://211.63.89.141/main/main_images/SO02.jpg"
+											href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"><img
+											src="http://team3.aws.sist.co.kr/main/main_images/SO02.jpg"
 											width="450" height="300"></a>
 									</div> <a
-									href="http://211.63.89.141/main/specialOffer.jsp"
+									href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"
 									class="promTitle"><h2 class="promTitle">Deep
 											Relaxation</h2></a>
 									<p>
@@ -308,11 +308,11 @@ RoomVO rv = rs.selectRoomInfo(room_no);
 								<td>
 									<div class="promImg">
 										<a
-											href="http://211.63.89.141/main/specialOffer.jsp"><img
-											src="http://211.63.89.141/main/main_images/SO03.jpg"
+											href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"><img
+											src="http://team3.aws.sist.co.kr/main/main_images/SO03.jpg"
 											width="450" height="300"></a>
 									</div> <a
-									href="http://211.63.89.141/main/specialOffer.jsp"
+									href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"
 									class="promTitle"><h2 class="promTitle">Arrive in
 											Style</h2></a>
 									<p>
@@ -323,11 +323,11 @@ RoomVO rv = rs.selectRoomInfo(room_no);
 								<td>
 									<div class="promImg">
 										<a
-											href="http://211.63.89.141/main/specialOffer.jsp"><img
-											src="http://211.63.89.141/main/main_images/SO04.jpg"
+											href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"><img
+											src="http://team3.aws.sist.co.kr/main/main_images/SO04.jpg"
 											width="450" height="300"></a>
 									</div> <a
-									href="http://211.63.89.141/main/specialOffer.jsp"
+									href="http://team3.aws.sist.co.kr/main/specialOffer.jsp"
 									class="promTitle"><h2 class="promTitle">Kids at Home</h2></a>
 									<p>
 										리츠 서울에서 사랑하는 아이에게 행복한 하루를 선물하세요.<br /> <strong>객실 +
@@ -344,12 +344,12 @@ RoomVO rv = rs.selectRoomInfo(room_no);
 				</div>
 			</div>
 		</div>
-					<c:import url="http://211.63.89.141/main/main_footer.jsp" />
+					<c:import url="http://team3.aws.sist.co.kr/main/main_footer.jsp" />
 
 		<!-- ================================================== -->
 
 		<script
-			src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+			src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 	</div>
 </body>
 </html>

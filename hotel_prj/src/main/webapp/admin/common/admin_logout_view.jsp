@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hotel Ritz - 관리자 로그아웃</title>
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/common/css/main_v20211012.css">
+	href="http://team3.aws.sist.co.kr/common/css/main_v20211012.css">
 	
 <!-- jQuery CDN -->
 <script
@@ -24,7 +24,7 @@
 
 <!-- 관리자 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/admin/css/admin_main.css">
+	href="http://team3.aws.sist.co.kr/admin/css/admin_main.css">
 
 <style type="text/css">
 #container {
@@ -66,7 +66,7 @@
 	<div id="wrap">
 		<!-- header  -->
 		<div id="header">
-			<span class="cursor" onclick="location.href='http://211.63.89.141/admin/common/admin_login.jsp'">Hotel Ritz Seoul</span>
+			<span class="cursor" onclick="location.href='http://team3.aws.sist.co.kr/admin/common/admin_login.jsp'">Hotel Ritz Seoul</span>
 			<span class="glyphicon glyphicon-user" aria-hidden="true" id="adminImg" ></span>
 			<span id="admin"> admin</span>
 		</div>
@@ -74,7 +74,7 @@
 		<!-- container  -->
 		<div id="container">
 			<span id="info">정상적으로 로그아웃 되었습니다.</span> <br/>
-			<span class="cursor" id="move" onclick="location.href='http://211.63.89.141/admin/common/admin_login.jsp'">로그인 화면으로 이동</span>
+			<span class="cursor" id="move" onclick="location.href='http://team3.aws.sist.co.kr/admin/common/admin_login.jsp'">로그인 화면으로 이동</span>
 		</div>
 		
 		<!-- footer import -->

@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <title>Insert title here</title>
-<link rel = "stylesheet" type = "text/css" href = "http://localhost/jsp_prj/common/css/main_v20211012.css" />
+<link rel = "stylesheet" type = "text/css" href = "http://team3.aws.sist.co.kr/jsp_prj/common/css/main_v20211012.css" />
 
 <style type="text/css">
 
@@ -53,7 +53,7 @@
 	
 %>
 
-<form name = "frm" method = "get" id = "frm" action = "http://211.63.89.141/user/reser_room/room_reserve.jsp"> <!--action : url  -->
+<form name = "frm" method = "get" id = "frm" action = "http://team3.aws.sist.co.kr/user/reser_room/room_reserve.jsp"> <!--action : url  -->
 
 <select id = "room_no" name = "room_no" >
 <option value = "N/A">---방번호-----</option>

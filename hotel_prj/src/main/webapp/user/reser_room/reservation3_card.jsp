@@ -28,7 +28,7 @@
 
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 .hr1 {
@@ -275,7 +275,7 @@ p { border: 1px solid #FF00FF}
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link href="http://211.63.89.141/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css"
 	rel="stylesheet">
 
 <script type="text/javascript">
@@ -455,7 +455,7 @@ $(function() {
 				<table class="chkTab">
 					<tr>
 						<td style="width: 500px"><img
-							src="http://211.63.89.141/roomImages/<%= rv.getMain_img() %>"
+							src="http://team3.aws.sist.co.kr/roomImages/<%= rv.getMain_img() %>"
 							width="480" height="330" /><br /> <br /></td>
 
 						<td>
@@ -550,7 +550,7 @@ $(function() {
 			<br />
 		
  
-			<form name="FFrm" action="http://211.63.89.141/user/reser_room/reservation_complete.jsp" id="FFrm" method="post">
+			<form name="FFrm" action="http://team3.aws.sist.co.kr/user/reser_room/reservation_complete.jsp" id="FFrm" method="post">
  					<div class="guideDiv">
 					<div class="guideTitle">신용카드 정보</div>
 					<p class="guideText" style="float: left">신용카드 정보는 게런티/위약금 결제를
@@ -715,6 +715,6 @@ $(function() {
 	<!-- ================================================== -->
 
 	<script
-		src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+		src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

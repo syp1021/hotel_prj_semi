@@ -30,7 +30,7 @@
 
 <!-- 메인 CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://211.63.89.141/main/main.css">
+	href="http://team3.aws.sist.co.kr/main/main.css">
 
 <style type="text/css">
 
@@ -103,7 +103,7 @@ p { border: 1px solid #FF00FF}
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-<link href="http://211.63.89.141/common/bootstrap/carousel.css"
+<link href="http://team3.aws.sist.co.kr/common/bootstrap/carousel.css"
 	rel="stylesheet">
 	
 
@@ -151,7 +151,7 @@ infowindow.open(map, marker);
 <script type="text/javascript">
 $(function(){
 	$("#goHomeBtn").click(function(){
-		location.href="http://211.63.89.141/main/Hotel_Ritz_Seoul.jsp";
+		location.href="http://team3.aws.sist.co.kr/main/Hotel_Ritz_Seoul.jsp";
 	})//table click
 	
 }); //ready
@@ -284,7 +284,7 @@ if ( paramCardSave.equals("Y") && !saveFlag.equals("0")){
 			<table class = "chkTab">
 			<tr >
 				<td style = "width: 500px">
-				<img src = "http://211.63.89.141/roomImages/<%= rv.getMain_img() %>" width="480" height="330"/><br/><br/>
+				<img src = "http://team3.aws.sist.co.kr/roomImages/<%= rv.getMain_img() %>" width="480" height="330"/><br/><br/>
 				</td>
 				
 				<td >
@@ -385,7 +385,7 @@ if ( paramCardSave.equals("Y") && !saveFlag.equals("0")){
 			</div><!-- resChk -->
 			<br/><br/>
 			<%-- 
-			<form name = "hiddenCard" action = "http://211.63.89.141/user/reser_room/card_process.jsp" id = "hiddenCard" method = "get" >
+			<form name = "hiddenCard" action = "http://team3.aws.sist.co.kr/user/reser_room/card_process.jsp" id = "hiddenCard" method = "get" >
 				<input type="hidden" id="card_no" name="card_no" value = "<%= card_no %>"/>
 				<input type="hidden" id="company" name="company" value = "<%=cardCompany %>"/>
 				<input type="hidden" id="val_mm" name="val_mm" value = "<%= val_MM %>"/>
@@ -404,7 +404,7 @@ if ( paramCardSave.equals("Y") && !saveFlag.equals("0")){
     <!-- ================================================== -->
 
 		<script
-			src="http://211.63.89.141/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
+			src="http://team3.aws.sist.co.kr/common/bootstrap/ie10-viewport-bug-workaround.js"></script>
 	</div>
 </body>
 </html>

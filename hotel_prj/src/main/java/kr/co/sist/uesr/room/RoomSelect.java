@@ -155,7 +155,7 @@ public class RoomSelect {
 				
 		//JdbcTemplate 얻기	
 		JdbcTemplate jt = gjt.getJdbcTemplate();
-				
+				   
 		//쿼리실행
 		StringBuilder selectAvailReserve = new StringBuilder();
 		selectAvailReserve
@@ -165,8 +165,8 @@ public class RoomSelect {
 		.append("	(select room.room_no	")
 		.append("	from  room room, reservation res	")
 		.append("	where (res.room_no=room.room_no)	")
-		.append("	and (  (to_date(chkin_date,'yyyy.mm.dd')<=?	")
-		.append("	and to_date(chkout_date,'yyyy.mm.dd') >= ?))	")
+		.append("	and (  (to_date(chkin_date,'yyyy.mm.dd')<=to_date(?,'yyyy.mm.dd')	")
+		.append("	and to_date(chkout_date,'yyyy.mm.dd') >= to_date(?,'yyyy.mm.dd')))	")
 		.append(" 	)	")
 		.append("	and ((to_number(?) + nvl(to_number(?),0) ) <= room.max_guest)	")
 		.append("   and(room.r_status = 'Y')"	);

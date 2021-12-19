@@ -21,7 +21,7 @@ session.setAttribute("mg_id", reId);
 if(reId.equals(mg_id)) {
 %>    <!-- 로그인성공시 메인페이지로 이동 -->
 <script type="text/javascript">
-location.href="http://211.63.89.141/admin/common/admin_main.jsp";
+location.href="http://team3.aws.sist.co.kr/admin/common/admin_main.jsp";
 </script>
  <%} 
  %>
@@ -29,6 +29,6 @@ location.href="http://211.63.89.141/admin/common/admin_main.jsp";
 <c:if test="${ not empty e }">
 <script type="text/javascript">
 alert("아이디와 비밀번호를 확인해주세요.");
-location.href="http://211.63.89.141/admin/common/admin_login.jsp";
+location.href="http://team3.aws.sist.co.kr/admin/common/admin_login.jsp";
 </script>
 </c:if>

@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <title>Insert title here</title>
-<link rel = "stylesheet" type = "text/css" href = "http://localhost/jsp_prj/common/css/main_v20211012.css" />
+<link rel = "stylesheet" type = "text/css" href = "http://team3.aws.sist.co.kr/jsp_prj/common/css/main_v20211012.css" />
 
 <style type="text/css">
 
